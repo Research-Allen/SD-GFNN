@@ -1,46 +1,43 @@
-# SD-GFNN: Synaptic Divergence Growing Feedforward Neural Network
+# SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24407104.svg)](https://doi.org/10.5281/zenodo.24407104)
 
 ## Overview
 
-This repository contains the implementation, experiments, and manuscript materials for the Synaptic Divergence Growing Feedforward Neural Network (SD-GFNN), an adaptive neural architecture that dynamically expands its topology during training based on synaptic divergence criteria.
+SD-GFNN (Synaptic Divergence-Guided Growing Feedforward Neural Network) is a constructive learning framework that automatically adapts neural network topology during training.
 
-## Repository Structure
+## Features
 
-```
-GitHub/
-├── Docs/
-├── Experiments/
-├── Manuscript/
-├── Results/
-├── requirements.txt
-└── README.md
-```
+- Dynamic neural network growth
+- Automatic architecture adaptation
+- Function-preserving expansion
+- Fibonacci-regulated topology evolution
+- Reproducible experiments
 
-## Experimental Files
+## Repository
 
-- CD-GFNN-Main.py
-- dataset_VS_GFNN.py
-- Single-Neuron-Linear-Fibonacci-Exponential.py
-- IRIS-WINE-DIGITS.py
-- MLP-8-MLP-16-MLP-32.py
+GitHub: https://github.com/Research-Allen/SD-GFNN
 
-## Installation
+## Citation
 
-```bash
-pip install -r requirements.txt
-```
-
-## Running Experiments
-
-```bash
-python Experiments/CD-GFNN-Main.py
+```bibtex
+@software{diaz2026sdgfnn,
+  author    = {Dias Diaz},
+  title     = {SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.24407104},
+  url       = {https://doi.org/10.5281/zenodo.24407104}
+}
 ```
 
-## Author
+## DOI
 
-Dias Diaz
-Assistant Professor
+Concept DOI: https://doi.org/10.5281/zenodo.24407104
+
+Version DOI: https://doi.org/10.5281/zenodo.24407105
 
 ## License
 
-Research and educational use.
+MIT License
