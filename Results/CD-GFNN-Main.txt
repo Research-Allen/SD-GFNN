@@ -1,0 +1,110 @@
+R=01 | N=  8 | Acc=0.9890 | D=0.8704 | Gain=inf
+R=02 | N=  9 | Acc=1.0000 | D=0.8433 | Gain=0.01099
+R=03 | N= 10 | Acc=0.9890 | D=0.8872 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=0.9890 | D=0.8639 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8446 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9670 | D=0.8168 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8190 | Gain=0.02198
+R=03 | N= 10 | Acc=0.9780 | D=0.8300 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=1.0000 | D=0.8362 | Gain=inf
+R=02 | N=  9 | Acc=1.0000 | D=0.7956 | Gain=0.00000
+Stop: D=0.7956 <= 0.8080
+R=01 | N=  8 | Acc=0.9890 | D=0.8596 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8836 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9780 | D=0.8161 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8620 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9560 | D=0.8589 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8414 | Gain=0.02198
+R=03 | N= 10 | Acc=0.9780 | D=0.8773 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9890 | D=0.8371 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8297 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9780 | D=0.8324 | Gain=inf
+R=02 | N=  9 | Acc=0.9670 | D=0.8325 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=0.9780 | D=0.7941 | Gain=inf
+Stop: D=0.7941 <= 0.8080
+R=01 | N=  8 | Acc=0.9780 | D=0.8468 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8652 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9670 | D=0.8252 | Gain=inf
+R=02 | N=  9 | Acc=0.9670 | D=0.8437 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9780 | D=0.8355 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8294 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9890 | D=0.8131 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8786 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9560 | D=0.8399 | Gain=inf
+R=02 | N=  9 | Acc=0.9560 | D=0.8541 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9670 | D=0.7591 | Gain=inf
+Stop: D=0.7591 <= 0.8080
+R=01 | N=  8 | Acc=0.9890 | D=0.8181 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8194 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9670 | D=0.8714 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8229 | Gain=0.01099
+R=03 | N= 10 | Acc=0.9670 | D=0.8416 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=0.9890 | D=0.8142 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8102 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9780 | D=0.8671 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8805 | Gain=0.01099
+R=03 | N= 10 | Acc=0.9670 | D=0.8345 | Gain=-0.02198
+Stop: Gain=-0.021978
+R=01 | N=  8 | Acc=0.9780 | D=0.8486 | Gain=inf
+R=02 | N=  9 | Acc=0.9670 | D=0.8760 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=0.9560 | D=0.7821 | Gain=inf
+Stop: D=0.7821 <= 0.8080
+R=01 | N=  8 | Acc=1.0000 | D=0.8366 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.7862 | Gain=-0.01099
+Stop: D=0.7862 <= 0.8080
+R=01 | N=  8 | Acc=0.9780 | D=0.8596 | Gain=inf
+R=02 | N=  9 | Acc=0.9670 | D=0.8598 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=0.9890 | D=0.8373 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.7856 | Gain=0.00000
+Stop: D=0.7856 <= 0.8080
+R=01 | N=  8 | Acc=0.9890 | D=0.8305 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8799 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9890 | D=0.8708 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8874 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9780 | D=0.8882 | Gain=inf
+R=02 | N=  9 | Acc=0.9890 | D=0.8346 | Gain=0.01099
+R=03 | N= 10 | Acc=0.9780 | D=0.8293 | Gain=-0.01099
+Stop: Gain=-0.010989
+R=01 | N=  8 | Acc=1.0000 | D=0.8470 | Gain=inf
+R=02 | N=  9 | Acc=1.0000 | D=0.8669 | Gain=0.00000
+Stop: Gain=0.000000
+R=01 | N=  8 | Acc=0.9670 | D=0.8734 | Gain=inf
+R=02 | N=  9 | Acc=0.9780 | D=0.8316 | Gain=0.01099
+R=03 | N= 10 | Acc=0.9780 | D=0.8384 | Gain=0.00000
+Stop: Gain=0.000000
+
+======================================================================
+SD-GFNN RESULTS
+======================================================================
+Accuracy Mean            : 0.9766
+Accuracy Std             : 0.0151
+Precision Mean           : 0.9771
+Recall Mean              : 0.9766
+F1 Mean                  : 0.9765
+F1 Std                   : 0.0151
+ROC-AUC Mean             : 0.9946
+ROC-AUC Std              : 0.0053
+Average Growth Events    : 1.13
+Average Best Neurons     : 8.23
+Average Terminal Neurons : 9.13
+======================================================================
