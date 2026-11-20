@@ -1,2 +1,2 @@
-# SD-GFNN-
+# SD-GFNN
 SD-GFNN 
