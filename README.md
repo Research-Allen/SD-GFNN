@@ -22,7 +22,7 @@ GitHub: https://github.com/Research-Allen/SD-GFNN
 
 ```bibtex
 @software{diaz2026sdgfnn,
-  author    = {Dias Diaz},
+  author    = {Dias, Allen, Isaiah},
   title     = {SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network},
   year      = {2026},
   version   = {1.0.0},
