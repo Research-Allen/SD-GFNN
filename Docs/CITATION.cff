@@ -9,9 +9,7 @@ message: >
 type: software
 
 authors:
-  - family-names: Nurmagambetov
-    given-names: Dias
-    orcid: https://orcid.org/0009-0006-3871-4748
+ Dias Nurmagambetov, Ph.D., Allen Eset, Isaiah Eset
 
 repository-code: https://github.com/Research-Allen/SD-GFNN
 
