@@ -159,7 +159,7 @@ If you use SD-GFNN in your research, please cite:
 
 ```bibtex
 @software{nurmagambetov2026sdgfnn,
-  author    = {Dias Nurmagambetov},
+  author    = {Dias Nurmagambetov, Ph.D., Allen Eset, Isaiah Eset},
   title     = {SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network},
   year      = {2026},
   version   = {1.0.0},
