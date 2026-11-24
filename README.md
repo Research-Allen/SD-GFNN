@@ -1,121 +1,139 @@
-# SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network
+# SD-GFNN: Synaptic Divergence Growing Feedforward Neural Network
 
-https://zenodo.org/badge/DOI/10.5281/zenodo.24407104.svg](https://doi.org/10.5281/zenodo.24407104)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Official implementation and reproducibility package for:
+
+**SD-GFNN: A Synaptic Divergence-Based Growing Feedforward Neural Network for Adaptive Network Expansion**
+
+Author:
+Dias Nurmagambetov
+Prairie View A&M University, Texas, USA
+
+---
 
 ## Overview
 
-SD-GFNN (Synaptic Divergence-Guided Growing Feedforward Neural Network) is a constructive learning framework that automatically adapts hidden-layer topology during training through divergence-guided structural growth.
+SD-GFNN (Synaptic Divergence Growing Feedforward Neural Network) is a dynamically expandable neural network that automatically increases its hidden-layer capacity during training.
 
-Unlike conventional feedforward neural networks that require manual selection of hidden-layer width, SD-GFNN incrementally expands network capacity according to Synaptic Divergence, a neuron-level measure of representational heterogeneity and downstream synaptic flux variability.
+Unlike conventional fixed-width multilayer perceptrons (MLPs), SD-GFNN introduces a **Synaptic Divergence (SD)** criterion that monitors neuron activity and determines when additional representational capacity is required.
 
-The framework combines:
+The proposed framework:
 
-- Synaptic Divergence-guided growth
-- Topological Spot localization
-- Function-preserving neuron insertion
-- Fibonacci-regulated capacity expansion
-- Conditional finite structural termination
-- Adaptive architecture construction without manual topology selection
+- Starts from a compact architecture
+- Monitors synaptic divergence values
+- Triggers adaptive network growth
+- Preserves previously learned knowledge
+- Reduces unnecessary neuron expansion
+- Improves parameter efficiency
 
 ---
 
 ## Repository Structure
 
-```text
-SD-GFNN
-│
-├── Docs/
-│   ├── CITATION.bib
-│   ├── CITATION.cff
-│   └── LICENSE
+```
+SD-GFNN/
 │
 ├── Experiments/
-│   ├── CD-GFNN-Main.py
-│   ├── dataset_VS_GFNN.py
-│   ├── IRIS-WINE-DIGITS.py
-│   ├── MLP-8-MLP-16-MLP-32.py
-│   ├── SD-GFNN-vs-CC-vs-DNC.py
-│   ├── Fashion-MNIST.py
-│   └── Single-Neuron-Linear-Fibonacci-Exponential-Growth.py
-│
-├── Manuscript/
-│   └── CD-GFNNPaper.pdf
+│   ├── source_code/
+│   ├── ablation_study/
+│   └── baseline_models/
 │
 ├── Results/
-│   ├── experimental-results.md
-│   ├── statistical-tests.csv
-│   ├── results.csv
-│   ├── SD-GFNN vs DNC vs CC.txt
-│   └── ForFashion-MNIST.txt
+│   ├── raw_csv/
+│   ├── summary_tables/
+│   ├── statistical_tests/
+│   └── figures/
+│
+├── Seeds/
+│   └── random_seeds.csv
+│
+├── Docs/
+│   ├── configs/
+│   ├── CITATION.bib
+│   └── CITATION.cff
+│
+├── Manuscript/
+│   └── submission_version.pdf
 │
 ├── README.md
-└── requirements.txt
+├── REPRODUCIBILITY.md
+├── requirements.txt
+└── LICENSE
 ```
 
 ---
 
-## Main Contributions
+## Included Reproducibility Materials
 
-- Automatic hidden-layer growth without manual tuning.
-- Synaptic Divergence criterion for adaptive capacity allocation.
-- Function-preserving neuron insertion to maintain output continuity.
-- Fibonacci-based growth strategy that limits capacity overshoot.
-- Theoretical analysis of invariance, convergence, and bounded growth.
-- Statistical validation through repeated experimental trials.
+This repository contains all materials required to reproduce the experiments reported in the manuscript.
 
----
+### Experimental Assets
 
-## Experimental Evaluation
+✅ Source code
 
-### Benchmark Datasets
+✅ Configuration files
 
-- Iris
-- Wine
-- Breast Cancer Wisconsin
-- Digits
-- Fashion-MNIST
+✅ Random seeds
 
-### Classical Constructive Neural Network Baselines
+✅ Raw experimental outputs
 
-- Cascade-Correlation (Fahlman & Lebiere, 1990)
-- Dynamic Node Creation (Ash, 1989)
+✅ Statistical analysis
 
-### Fixed-Topology Baselines
+✅ Ablation study results
 
-- MLP(8)
-- MLP(16)
-- MLP(32)
+✅ Summary tables
+
+✅ Figures used in the manuscript
 
 ---
 
-## Representative Results
+## Datasets
 
-### Constructive Neural Network Comparison
+Experiments were conducted using several benchmark datasets:
 
-| Method | Mean Accuracy |
-|----------|----------:|
-| Cascade-Correlation | 97.49% |
-| Dynamic Node Creation | 97.60% |
-| SD-GFNN | 97.72% |
+| Dataset | Task |
+|----------|----------|
+| Iris | Classification |
+| Wine | Classification |
+| Breast Cancer Wisconsin | Classification |
+| Digits | Handwritten Digit Recognition |
+| Fashion-MNIST | Image Classification |
 
-### Fashion-MNIST Evaluation
+Datasets are obtained through:
 
-| Method | Mean Accuracy |
-|----------|----------:|
-| MLP(32) | 90.40% |
-| SD-GFNN | 90.13% |
+- Scikit-Learn
+- TensorFlow/Keras
 
-The results indicate that divergence-guided growth achieves predictive performance comparable to classical constructive neural networks while maintaining favorable computational efficiency.
+and can be automatically downloaded by the provided scripts.
 
 ---
 
 ## Installation
 
+Create a Python environment:
+
 ```bash
-git clone https://github.com/Research-Allen/SD-GFNN.git
+python -m venv sd_gfnn_env
+```
 
-cd SD-GFNN
+Activate:
 
+Windows
+
+```bash
+sd_gfnn_env\Scripts\activate
+```
+
+Linux/Mac
+
+```bash
+source sd_gfnn_env/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
@@ -123,62 +141,123 @@ pip install -r requirements.txt
 
 ## Running Experiments
 
-### Main SD-GFNN Experiment
+Example:
 
 ```bash
-python Experiments/CD-GFNN-Main.py
+python Experiments/source_code/digits_experiment.py
 ```
 
-### Constructive Neural Network Benchmark
+or
 
 ```bash
-python Experiments/SD-GFNN-vs-CC-vs-DNC.py
+python Experiments/source_code/fashion_mnist_experiment.py
 ```
 
-### Fashion-MNIST Evaluation
+Results will automatically be stored in:
 
-```bash
-python Experiments/Fashion-MNIST.py
+```text
+Results/raw_csv/
 ```
 
 ---
 
-## Manuscript
+## Reproducing Published Results
 
-The accompanying research manuscript is available in:
+The exact random seeds used in the publication are provided in:
 
 ```text
-Manuscript/CD-GFNNPaper.pdf
+Seeds/random_seeds.csv
+```
+
+To reproduce reported averages:
+
+1. Load the provided seed list
+2. Run all experiments
+3. Aggregate results
+4. Compare generated summary tables with:
+
+```text
+Results/summary_tables/
+```
+
+---
+
+## Statistical Evaluation
+
+The repository includes scripts and outputs for:
+
+- Mean Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- 95% Confidence Intervals
+- Paired t-tests
+- Wilcoxon Signed-Rank Tests
+- Cohen's d Effect Sizes
+
+---
+
+## Ablation Study
+
+The ablation analysis evaluates various growth strategies:
+
+- Single-node growth
+- Linear growth
+- Fibonacci growth (proposed)
+- Exponential growth
+
+Results are available in:
+
+```text
+Experiments/ablation_study/
+Results/statistical_tests/
+```
+
+---
+
+## Reproducibility Statement
+
+All reported results can be reproduced using:
+
+- Source code included in this repository
+- Published configuration files
+- Fixed random seeds
+- Open benchmark datasets
+
+No proprietary software, private datasets, or inaccessible resources are required.
+
+Additional details are provided in:
+
+```text
+REPRODUCIBILITY.md
 ```
 
 ---
 
 ## Citation
 
-If you use SD-GFNN in your research, please cite:
+If you use this work, please cite:
 
 ```bibtex
-@software{nurmagambetov2026sdgfnn,
-  author    = {Dias Nurmagambetov, Ph.D., Allen Eset, Isaiah Eset},
-  title     = {SD-GFNN: Synaptic Divergence-Guided Growing Feedforward Neural Network},
-  year      = {2026},
-  version   = {1.0.0},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.24407104},
-  url       = {https://doi.org/10.5281/zenodo.24407104}
+@article{Nurmagambetov2026SDGFNN,
+  author = {Nurmagambetov, Dias},
+  title = {SD-GFNN: A Synaptic Divergence-Based Growing Feedforward Neural Network for Adaptive Network Expansion},
+  journal = {Neural Processing Letters},
+  year = {2026}
 }
 ```
-
-Concept DOI:
-
-https://doi.org/10.5281/zenodo.24407104
-
-Version DOI:
-
-https://doi.org/10.5281/zenodo.24407105
 
 ---
 
 ## License
 
-MIT License
+This project is released under the MIT License.
+
+See:
+
+```text
+LICENSE
+```
+
+for details.
