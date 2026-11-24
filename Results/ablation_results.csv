@@ -1,7 +1,0 @@
-Variant,Accuracy,F1,FinalNeurons
-Full_SDGFNN,,,
-Without_Divergence,,,
-Without_Growth,,,
-Linear_Growth,,,
-Exponential_Growth,,,
-Fibonacci_Growth,,,
