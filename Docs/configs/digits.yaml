@@ -1,0 +1,21 @@
+dataset: digits
+
+initial_hidden_units: 4
+
+growth_strategy: fibonacci
+
+max_hidden_units: 64
+
+learning_rate: 0.001
+
+optimizer: adam
+
+batch_size: 32
+
+epochs_per_stage: 20
+
+patience: 5
+
+activation: relu
+
+runs: 30
